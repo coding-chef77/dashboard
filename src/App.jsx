@@ -1,33 +1,17 @@
-import { Grid } from "@mui/material";
-import Calculator from "./components/Calculator/Calculator";
-import Calendar from "./components/Calendar/Calendar";
-import NewsFeed from "./components/NewsFeed/NewsFeed";
-import WeatherWidget from "./components/WeatherWidget/WeatherWidget";
-import StravaFeed from "./components/stravaFeed/StravaFeed";
+import NewsFeed from "./components/newsFeed/NewsFeed";
 import Navbar from "./components/navbar/Navbar";
+import WeatherWidget from "./components/weatherWidget/WeatherWidget";
+import Footer from "./components/footer/Footer";
+import { Container } from "@mui/material";
 
 function App() {
   return (
-    <Grid container spacing={3}>
-      <Grid xs={12}>
-        <Navbar />
-      </Grid>
-      <Grid xs={12}>
-        <WeatherWidget />
-      </Grid>
-      <Grid xs={8}>
-        <NewsFeed />
-      </Grid>
-      <Grid xs={8}>
-        <Calendar />
-      </Grid>
-      <Grid xs={4}>
-        <Calculator />
-      </Grid>
-      <Grid xs={4}>
-        <StravaFeed />
-      </Grid>
-    </Grid>
+    <Container sx={{ height: "100vh" }}>
+      <Navbar />
+      <NewsFeed />
+      <WeatherWidget />
+      <Footer />
+    </Container>
   );
 }
 

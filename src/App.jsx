@@ -8,23 +8,23 @@ import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={12}>
+    <Grid container spacing={3}>
+      <Grid xs={12}>
         <Navbar />
       </Grid>
-      <Grid item xs={8}>
+      <Grid xs={12}>
         <WeatherWidget />
       </Grid>
-      <Grid item xs={4}>
-        <Calendar />
-      </Grid>
-      <Grid item xs={8}>
+      <Grid xs={8}>
         <NewsFeed />
       </Grid>
-      <Grid item xs={4}>
+      <Grid xs={8}>
+        <Calendar />
+      </Grid>
+      <Grid xs={4}>
         <Calculator />
       </Grid>
-      <Grid item xs={4}>
+      <Grid xs={4}>
         <StravaFeed />
       </Grid>
     </Grid>
